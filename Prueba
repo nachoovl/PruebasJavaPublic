@@ -1,0 +1,15 @@
+
+const actual = 2021
+
+let nombre = prompt('¿Cómo es tu nombre?');
+
+if (nombre == '') { alert('¡Completa tu nombre!'); let nombre = prompt('¿Cómo es tu nombre?') }
+else {let año = parseInt(prompt('¿En qué año naciste?'));}
+
+if (isNaN(año)) { alert('¡Escribí tu año de nacimiento en números!'); let año = parseInt(prompt('¿En qué año naciste?')) }
+else {alert ('Nombre: ' + nombre + '\nAño: ' + año );}
+
+let resultado = actual - año;
+
+if (resultado < 18) {alert('¡Hola, ' + nombre + '!' + ' Tenes ' + resultado + ' años. Eso singifica que sos menor de edad.');}
+else (resultado >= 18); {alert('¡Hola, ' + nombre + '!' + ' Tenes ' + resultado + ' años. Eso significa que sos mayor de edad.');}
